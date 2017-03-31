@@ -4,13 +4,15 @@ import java.util.Scanner;
  * Created by zmkn2 on 2017/3/22.
  */
 public class num_3 {
-    public static void main (String [] a){
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
-        for( int t = 0; t < n; t++){
-            getMax(in, t);
-        }
-        return ;
+    public static void main (String [] ar){
+
+        int i = 20;
+        int n = i++%5;
+        System.out.println(i+","+n);
+
+    }
+    static int fib(int x){
+        return  ((x>0)?x*fib(x-1):2);
     }
     public static void getMax(Scanner in, int t){
         int n = in.nextInt();
